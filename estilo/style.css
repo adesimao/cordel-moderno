@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+:root {
+    --fonte1: Verdana, "Geneva", Tahoma, sans-serif;
+    --fonte2: 'Arial Narrow Bold', sans-serif;
+    --fonte3: "Cambria", "Cochin", Georgia, Times, 'Times New Roman', serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgb(125, 125, 125);
+    font-family: var(--fonte1);
+    font-size: 1em;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte2);
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase; */
+    font-variant: small-caps;
+    font-size: 6vw;
+    font-weight: bolder;
+}
+
+header > p {
+    padding-bottom: 50px;
+    font-size: 1em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 10vh 0px 10vh 30px;
+    line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: #000000;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.659);
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.501);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url("../imagens/background002.jpg"); 
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px; 
+}
